@@ -455,7 +455,7 @@ public class MasterNode {
 
         totalTime = totalEnd - totalStart;
 
-        //outputResultFromServerNode();
+        outputResultFromServerNode();
 
         Logger.log("File split time: " + fileSplitTime + "ms.", LogLevel.Info);
         Logger.log("Splits send time: " + sendSplitsTime + "ms.", LogLevel.Info);
