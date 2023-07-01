@@ -22,7 +22,7 @@ working_machines=()
 
 for machine in "${shuffled_machines[@]}"; do
   ssh -q -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=3 $login@$machine "exit"
-  [[ $? -eq 0 ]] && [[ -z "$(ssh -q $login@$machine "lsof -ti tcp:61375")" ]] && working_machines+=("$machine") && ((working_count++))
+  [[ $? -eq 0 ]] && [[ -z "$(ssh -q $login@$machine "lsof -ti tcp:$port")" ]] && working_machines+=("$machine") && ((working_count++))
   [[ $working_count -eq $requiredCount ]] && break
 done
 
