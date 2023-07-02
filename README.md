@@ -56,11 +56,11 @@ It will automatically build the program, make a list of available computers in T
 ### For a file (300MB) ``"/cal/commoncrawl/CC-MAIN-20230321002050-20230321032050-00486.warc.wet"``
 
 Number of server nodes:
-- 4: 8843ms.
-- 8: 10080ms.
-- 12: 11172ms.
-- 16: 11268ms.
-- 24: 11192ms.
+- 4: 13843ms.
+- 8: 15080ms.
+- 12: 16172ms.
+- 16: 16268ms.
+- 24: 16192ms.
 
 ### Plot
 
